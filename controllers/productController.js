@@ -1,0 +1,35 @@
+const { Product } = require("../models");
+
+async function index(req, res) {
+  const products = await Product.findAll({
+    // include: [
+    //   {
+    //     model: Category,
+    //     attributes: ["id", "name"],
+    //   },
+    // ],
+  });
+  res.json("Mostrando lista de productos");
+}
+
+async function show(req, res) {}
+
+async function store(req, res) {}
+
+async function create(req, res) {}
+
+async function edit(req, res) {}
+
+async function update(req, res) {}
+
+async function destroy(req, res) {}
+
+module.exports = {
+  index,
+  show,
+  create,
+  store,
+  edit,
+  update,
+  destroy,
+};
