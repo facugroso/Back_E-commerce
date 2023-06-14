@@ -9,7 +9,7 @@ async function index(req, res) {
     //   },
     // ],
   });
-  res.json("Mostrando lista de productos");
+  res.json(products);
 }
 
 async function show(req, res) {}
