@@ -3,7 +3,7 @@
  * Una alternativa podría ser organizar las rutas por entidad:
  */
 
-const userRoutes = require("./userRoutes");
+const userRoutes = require("./publicRoutes");
 const articleRoutes = require("./articleRoutes");
 const commentRoutes = require("./commentRoutes");
 
