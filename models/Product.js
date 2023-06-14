@@ -13,6 +13,9 @@ class Product extends Model {
         image: {
           type: DataTypes.JSON,
         },
+        description: {
+          type: DataTypes.TEXT,
+        },
         stock: {
           type: DataTypes.BIGINT,
         },
@@ -20,7 +23,7 @@ class Product extends Model {
           type: DataTypes.BOOLEAN,
         },
         price: {
-          type: DataTypes.DECIMAL,
+          type: DataTypes.DECIMAL(10, 2),
         },
         slug: {
           type: DataTypes.STRING(255),
