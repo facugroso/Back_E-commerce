@@ -154,7 +154,7 @@ module.exports = async () => {
     {
       name: "HyperX Pulsefire Dart - Wireless Gaming Mouse",
       image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_pulsefire_dart_01_top_down_720x.jpg?v=1678907870",
+        "https://i.postimg.cc/y6PMFyXD/hyperx-pulsefire-dart-01-top-down-720x.png",
       description:
         "HyperX Pulsefire Dart™ is a gaming-grade wireless mouse with a reliable 2.4GHz RF connection that will make you wonder why you waited so long to cut the cord. A wireless adapter is included to extend the range for desktop PC setups. It is Qi Certified for wireless charging and can last up to 50 hours on a single charge. With a Pixart 3389 sensor and a split-button design featuring reliable Omron switches, you’ll have all the accuracy you need to crush the competition. It’s ergonomically-shaped and features padded leatherette side grips designed to keep you comfortable during those long nights of gaming. Customize RGB lighting, create macros, manage battery life, and adjust DPI settings with the easy-to-use HyperX NGENUITY Software.",
       stock: 20,
