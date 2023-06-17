@@ -13,7 +13,7 @@ async function index(req, res) {
 }
 
 async function show(req, res) {
-  const product = await Product.findByPk(req.params.id);
+  const product = await Product.findOne({ where: { slug: req.params.id } });
   res.json(product);
 }
 
