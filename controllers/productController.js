@@ -12,7 +12,10 @@ async function index(req, res) {
   res.json(products);
 }
 
-async function show(req, res) {}
+async function show(req, res) {
+  const product = await Product.findByPk(req.params.id);
+  res.json(product);
+}
 
 async function store(req, res) {}
 

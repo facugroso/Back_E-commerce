@@ -13,8 +13,17 @@ class Product extends Model {
         image: {
           type: DataTypes.JSON,
         },
+        gallery: {
+          type: DataTypes.JSON,
+        },
+        descriptiontitle: {
+          type: DataTypes.TEXT,
+        },
         description: {
           type: DataTypes.TEXT,
+        },
+        features: {
+          type: DataTypes.JSON,
         },
         stock: {
           type: DataTypes.BIGINT,
