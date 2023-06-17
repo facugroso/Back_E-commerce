@@ -7,7 +7,7 @@ module.exports = async () => {
     {
       name: "HyperX Cloud III - Gaming Headset",
       image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_iii_red_66x0049_angle_4_720x.jpg?v=1686845842",
+        "https://i.postimg.cc/V62MhMRJ/hyperx-cloud-iii-red-6649-main-1-588d9fec-b439-4046-bcae-4d38df96053e-900x.png",
 
       gallery: [
         "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_iii_red_66x0049_angle_2_720x.jpg?v=1686845842",
