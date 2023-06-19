@@ -4,6 +4,7 @@ const categoriesRoutes = require("./categoriesRoutes");
 const usersRoutes = require("./usersRoutes");
 const adminRoutes = require("./adminRoutes");
 const ordersRoutes = require("./ordersRoutes");
+const authRoutes = require("./authRoutes");
 
 module.exports = (app) => {
   app.use("/", publicRoutes);
@@ -12,4 +13,5 @@ module.exports = (app) => {
   app.use("/users", usersRoutes);
   app.use("/admin", adminRoutes);
   app.use("/orders", ordersRoutes);
+  app.use("/", authRoutes);
 };
