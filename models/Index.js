@@ -11,26 +11,29 @@ const sequelize = new Sequelize(
   }
 );
 
-// const Order = require("./Order");
+const Order = require("./Order");
 const Category = require("./Category");
 const Product = require("./Product");
-// const User = require("./User");
+const User = require("./User");
+const Admin = require("./Admin");
 
-// Order.initModel(sequelize);
+Order.initModel(sequelize);
 Category.initModel(sequelize);
 Product.initModel(sequelize);
-// User.initModel(sequelize);
+User.initModel(sequelize);
+Admin.initModel(sequelize);
 
 Category.hasMany(Product);
 Product.belongsTo(Category);
 
-// User.hasMany(Order);
-// Order.belongsTo(User);
+User.hasMany(Order);
+Order.belongsTo(User);
 
 module.exports = {
   sequelize,
-  // User,
+  User,
   Product,
   Category,
-  // Order,
+  Order,
+  Admin,
 };

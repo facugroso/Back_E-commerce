@@ -1,14 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const productController = require("../controllers/productController");
-
-// Rutas relacionadas a los usuarios:
-// ...
+const userController = require("../controllers/userController");
 
 router.get("/products", productController.index);
 router.get("/products/:id", productController.show);
-// router.post("/", userController.store);
-// router.get("/:id", userController.show);
-// router.get("/:id/editar", userController.edit);
+router.get("/users/:id", userController.show);
+router.post("/users", userController.store);
 
 module.exports = router;

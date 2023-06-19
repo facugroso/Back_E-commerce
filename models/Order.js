@@ -16,6 +16,9 @@ class Order extends Model {
         status: {
           type: DataTypes.ENUM(["Sin pagar", "Pago", "Enviado", "Entregado"]),
         },
+        payment: {
+          type: DataTypes.ENUM(["MercadoPago", "Crédito", "PayPal"]),
+        },
       },
 
       {
