@@ -12,17 +12,17 @@ const sequelize = new Sequelize(
 );
 
 // const Order = require("./Order");
-// const Category = require("./Category");
+const Category = require("./Category");
 const Product = require("./Product");
 // const User = require("./User");
 
 // Order.initModel(sequelize);
-// Category.initModel(sequelize);
+Category.initModel(sequelize);
 Product.initModel(sequelize);
 // User.initModel(sequelize);
 
-// Category.hasMany(Product);
-// Product.belongsTo(Category);
+Category.hasMany(Product);
+Product.belongsTo(Category);
 
 // User.hasMany(Order);
 // Order.belongsTo(User);

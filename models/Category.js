@@ -10,6 +10,12 @@ class Category extends Model {
           autoIncrement: true,
         },
         name: { type: DataTypes.STRING },
+        image: {
+          type: DataTypes.JSON,
+        },
+        // slug: {
+        //   type: DataTypes.STRING(255),
+        // },
       },
       {
         sequelize,

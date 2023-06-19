@@ -3,14 +3,7 @@ const { Product } = require("../models");
 const formidable = require("formidable");
 
 async function index(req, res) {
-  const products = await Product.findAll({
-    // include: [
-    //   {
-    //     model: Category,
-    //     attributes: ["id", "name"],
-    //   },
-    // ],
-  });
+  const products = await Product.findAll({});
   res.json(products);
 }
 
