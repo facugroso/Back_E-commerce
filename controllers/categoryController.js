@@ -24,14 +24,14 @@ async function store(req, res) {
     }
     const newCategory = await Category.create({
       name: fields.name,
-      // image: files.image.newFilename,
-      // slug: slugify(fields.name).toLowerCase(),
+      image: files.image.newFilename,
+      slug: slugify(fields.name).toLowerCase(),
     });
     return res.json(newCategory);
   });
 }
 
-// async function create(req, res) {}
+async function create(req, res) {}
 
 async function edit(req, res) {}
 
@@ -70,7 +70,7 @@ async function destroy(req, res) {
 module.exports = {
   index,
   show,
-  // create,
+  create,
   store,
   edit,
   update,

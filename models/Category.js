@@ -13,9 +13,9 @@ class Category extends Model {
         image: {
           type: DataTypes.JSON,
         },
-        // slug: {
-        //   type: DataTypes.STRING(255),
-        // },
+        slug: {
+          type: DataTypes.STRING(255),
+        },
       },
       {
         sequelize,
