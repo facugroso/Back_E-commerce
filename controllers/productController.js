@@ -34,6 +34,7 @@ async function store(req, res) {
       price: fields.price,
       slug: slugify(fields.name).toLowerCase(),
     });
+    console.log(files.image);
     return res.json(newProduct);
   });
 }

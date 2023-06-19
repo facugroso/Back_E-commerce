@@ -27,6 +27,7 @@ module.exports = async () => {
       trending: true,
       price: 99.99,
       slug: slugify("hyperx cloud iii gaming headset"),
+      categoryId: 2,
     },
     {
       name: "HyperX Cloud Alpha - Naruto Edition - Gaming Headset",
@@ -51,6 +52,7 @@ module.exports = async () => {
       trending: true,
       price: 109.99,
       slug: slugify("hyperX cloud alpha naruto edition gaming headset"),
+      categoryId: 2,
     },
     {
       name: "HyperX CloudX Stinger Core - Gaming Headset - Xbox",
@@ -74,6 +76,7 @@ module.exports = async () => {
       trending: true,
       price: 39.99,
       slug: slugify("hyperX cloudX stinger core gaming headset xbox"),
+      categoryId: 2,
     },
     {
       name: "HyperX Alloy Origins Core PBT - Mechanical Gaming Keyboard",
@@ -99,6 +102,7 @@ module.exports = async () => {
       slug: slugify(
         "hyperx alloy origins core pbt - mechanical gaming keyboard"
       ),
+      categoryId: 3,
     },
     {
       name: "HyperX Alloy Origins - Naruto Edition - Mechanical Gaming Keyboard",
@@ -124,6 +128,7 @@ module.exports = async () => {
       slug: slugify(
         "hyperX alloy origins naruto edition mechanical gaming keyboard"
       ),
+      categoryId: 3,
     },
     {
       name: "HyperX Alloy Origins 60 - Mechanical Gaming Keyboard",
@@ -147,6 +152,7 @@ module.exports = async () => {
       trending: true,
       price: 99.99,
       slug: slugify("hyperX alloy origins 60 mechanical gaming keyboard"),
+      categoryId: 3,
     },
     {
       name: "HyperX SoloCast - USB Microphone",
@@ -171,6 +177,7 @@ module.exports = async () => {
       trending: true,
       price: 59.99,
       slug: slugify("hyperX solocast USB microphone"),
+      categoryId: 5,
     },
     {
       name: "HyperX QuadCast - USB Microphone",
@@ -195,6 +202,7 @@ module.exports = async () => {
       trending: true,
       price: 139.99,
       slug: slugify("hyperX quadCast USB microphone"),
+      categoryId: 5,
     },
     {
       name: "HyperX DuoCast - USB Microphone - RGB Lighting",
@@ -218,6 +226,7 @@ module.exports = async () => {
       trending: true,
       price: 99.99,
       slug: slugify("hyperX duocast USB microphone RGB lighting"),
+      categoryId: 5,
     },
     {
       name: "HyperX Armada 25 FHD Gaming Monitor",
@@ -241,6 +250,7 @@ module.exports = async () => {
       trending: true,
       price: 349.99,
       slug: slugify("hyperX armada 25 FHD gaming monitor"),
+      categoryId: 1,
     },
     {
       name: "HyperX Armada 27 QHD Gaming Monitor",
@@ -264,6 +274,7 @@ module.exports = async () => {
       trending: true,
       price: 399.99,
       slug: slugify("hyperX armada 27 FHD gaming monitor"),
+      categoryId: 1,
     },
     {
       name: "HyperX Pulsefire Haste 2 - Wireless Gaming Mouse",
@@ -287,6 +298,7 @@ module.exports = async () => {
       trending: true,
       price: 89.99,
       slug: slugify("hyperX pulsefire haste 2 wireless gaming mouse"),
+      categoryId: 4,
     },
     {
       name: "HyperX Pulsefire Haste - Naruto Edition - Gaming Mouse",
@@ -310,6 +322,7 @@ module.exports = async () => {
       trending: true,
       price: 59.99,
       slug: slugify("hyperX pulsefire haste naruto edition gaming mouse"),
+      categoryId: 4,
     },
     {
       name: "HyperX Pulsefire Dart - Wireless Gaming Mouse",
@@ -333,6 +346,7 @@ module.exports = async () => {
       trending: true,
       price: 99.99,
       slug: slugify("hyperX pulsefire dart wireless gaming mouse"),
+      categoryId: 4,
     }
   );
 
