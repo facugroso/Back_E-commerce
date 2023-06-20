@@ -1,4 +1,5 @@
 const { Category } = require("../models/");
+const { Product } = require("../models");
 const slugify = require("slugify");
 const formidable = require("formidable");
 
@@ -61,10 +62,14 @@ async function update(req, res) {
 }
 
 async function destroy(req, res) {
+  await Product.destroy({
+    where: { categoryId: req.params.id },
+  });
   await Category.destroy({
     where: { id: req.params.id },
   });
-  return res.json("Su categoria ha sido eliminada");
+
+  return res.json("Su categoría ha sido eliminada");
 }
 
 module.exports = {

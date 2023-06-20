@@ -8,7 +8,7 @@ module.exports = async () => {
   const users = [];
 
   for (let i = 0; i < 8; i++) {
-    let encryptedPassword = await bcrypt.hash("carlos", 2);
+    let encryptedPassword = await bcrypt.hash("carlos", 8);
     users.push({
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
