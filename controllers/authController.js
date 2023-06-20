@@ -23,12 +23,13 @@ async function tokenCustomer(req, res, next) {
 }
 
 async function tokenAdmin(req, res, next) {
+  console.log(req.body);
   try {
     const admin = await Admin.findOne({
       where: { email: req.body.email },
     });
     if (!admin) {
-      return res.json("credenciales inválidas");
+      return res.json("email inválido");
     }
     const match = await bcrypt.compare(req.body.password, admin.password);
     if (!match) {

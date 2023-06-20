@@ -1,3 +1,4 @@
+const bcrypt = require("bcryptjs");
 const { Admin } = require("../models");
 
 async function index(req, res) {
@@ -11,11 +12,14 @@ async function show(req, res) {
 }
 
 async function store(req, res) {
+  const getPassword = req.body.password;
+  const hashPassword = await bcrypt.hash(getPassword, 10);
+
   const newAdmin = await Admin.create({
     firstname: req.body.firstname,
     lastname: req.body.lastname,
     email: req.body.email,
-    password: req.body.password,
+    password: hashPassword,
   });
   return res.json(newAdmin);
 }
