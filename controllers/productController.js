@@ -30,11 +30,11 @@ async function store(req, res) {
       gallery: files.gallery.newFilename,
       features: fields.features,
       stock: fields.stock,
-      trending: fields.strending,
+      trending: fields.trending,
       price: fields.price,
+      categoryId: fields.categoryId,
       slug: slugify(fields.name).toLowerCase(),
     });
-    console.log(files.image);
     return res.json(newProduct);
   });
 }

@@ -16,7 +16,7 @@ class Product extends Model {
         gallery: {
           type: DataTypes.JSON,
         },
-        descriptiontitle: {
+        descriptionTitle: {
           type: DataTypes.TEXT,
         },
         description: {
