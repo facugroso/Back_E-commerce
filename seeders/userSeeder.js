@@ -9,10 +9,13 @@ module.exports = async () => {
 
   for (let i = 0; i < 8; i++) {
     let encryptedPassword = await bcrypt.hash("carlos", 8);
+    const lastname = faker.name.lastName();
+      const firstname = faker.name.firstName();
+
     users.push({
-      firstname: faker.name.firstName(),
-      lastname: faker.name.lastName(),
-      email: faker.internet.email(),
+      firstname: firstname,
+      lastname: lastname,
+      email: faker.internet.email(firstname, lastname),
       password: encryptedPassword,
       phone: faker.phone.phoneNumber(),
     });

@@ -23,7 +23,6 @@ async function tokenCustomer(req, res, next) {
 }
 
 async function tokenAdmin(req, res, next) {
-  console.log(req.body);
   try {
     const admin = await Admin.findOne({
       where: { email: req.body.email },

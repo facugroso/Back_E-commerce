@@ -44,10 +44,25 @@ async function update(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
+    
+    const imageFile = files.image;
+
     if (err) {
       console.log(err);
     }
-    const editCategory = await Category.update(
+    if (!imageFile){
+      const editCategory = await Category.update(
+        {
+          name: fields.name,
+          slug: slugify(fields.name).toLowerCase(),
+        },
+        {
+          where: { id: req.params.id },
+        }
+      );
+      return res.json(editCategory);
+    }else
+   { const editCategory = await Category.update(
       {
         name: fields.name,
         image: files.image.newFilename,
@@ -57,7 +72,7 @@ async function update(req, res) {
         where: { id: req.params.id },
       }
     );
-    return res.json(editCategory);
+    return res.json(editCategory);}
   });
 }
 
