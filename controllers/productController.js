@@ -19,17 +19,14 @@ async function store(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
-    console.log(files);
+    console.log(fields.features);
     if (err) {
       console.log(err);
     }
     const newGallery = [];
-    const newFeature = [];
+    const featureArr = fields.features.split(", ");
     for (const image of files.gallery) {
       newGallery.push(image.newFilename);
-    }
-    for (const text of fields.feature) {
-      newFeature.push(text);
     }
     const newProduct = await Product.create({
       name: fields.name,
@@ -37,7 +34,7 @@ async function store(req, res) {
       description: fields.description,
       image: files.image.newFilename,
       gallery: newGallery,
-      features: newFeature,
+      features: featureArr,
       stock: fields.stock,
       trending: fields.trending,
       price: fields.price,
