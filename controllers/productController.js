@@ -19,7 +19,6 @@ async function store(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
-    console.log(fields.features);
     if (err) {
       console.log(err);
     }
@@ -61,24 +60,30 @@ async function update(req, res) {
     if (err) {
       console.log(err);
     }
-    const editProduct = await Product.update(
-      {
-        name: fields.name,
-        descriptionTitle: fields.descriptionTitle,
-        description: fields.description,
-        image: files.image.newFilename,
-        gallery: files.gallery.newFilename,
-        features: fields.features,
-        stock: fields.stock,
-        trending: fields.strending,
-        price: fields.price,
-        categoryId: fields.categoryId,
-        slug: slugify(fields.name).toLowerCase(),
-      },
-      {
-        where: { id: req.params.id },
+    const newGallery = [];
+    const featureArr = fields.features.split(",");
+
+    const updatedProduct = {
+      name: fields.name,
+      descriptionTitle: fields.descriptionTitle,
+      description: fields.description,
+      features: featureArr,
+      stock: fields.stock,
+      trending: fields.trending,
+      price: fields.price,
+      categoryId: fields.categoryId,
+      slug: slugify(fields.name).toLowerCase(),
+    };
+    if (files.image.size) updatedProduct.image = files.image.newFilename;
+    if (!files.gallery.newFilename) {
+      for (const image of files.gallery) {
+        newGallery.push(image.newFilename);
       }
-    );
+      updatedProduct.gallery = newGallery;
+    }
+    const editProduct = await Product.update(updatedProduct, {
+      where: { slug: req.params.slug },
+    });
     return res.json(editProduct);
   });
 }
