@@ -9,6 +9,6 @@ router.use(
 
 router.post("/", productController.store);
 router.delete("/:id", productController.destroy);
-router.patch("/:id", productController.update);
+router.patch("/:slug", productController.update);
 
 module.exports = router;

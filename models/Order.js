@@ -25,7 +25,8 @@ class Order extends Model {
           type: DataTypes.JSON,
         },
         status: {
-          type: DataTypes.ENUM(["Sin pagar", "Pago", "Enviado", "Entregado"]),
+          type: DataTypes.ENUM(["Pending", "Paid", "Sent", "Delivered"]),
+          length: 10,
         },
       },
 
