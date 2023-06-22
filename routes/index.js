@@ -9,7 +9,7 @@ const authRoutes = require("./authRoutes");
 module.exports = (app) => {
   app.use("/", publicRoutes);
   app.use("/products", productsRoutes);
-  app.use("/category", categoriesRoutes);
+  app.use("/categories", categoriesRoutes);
   app.use("/users", usersRoutes);
   app.use("/admin", adminRoutes);
   app.use("/orders", ordersRoutes);
