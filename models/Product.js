@@ -11,7 +11,7 @@ class Product extends Model {
         },
         name: { type: DataTypes.STRING(255) },
         image: {
-          type: DataTypes.JSON,
+          type: DataTypes.STRING,
         },
         gallery: {
           type: DataTypes.JSON,
