@@ -9,15 +9,23 @@ class Order extends Model {
           primaryKey: true,
           autoIncrement: true,
         },
-        adress: { type: DataTypes.STRING },
+        firstname: { type: DataTypes.STRING },
+        lastname: { type: DataTypes.STRING },
+        address: {
+          type: DataTypes.JSON,
+        },
+        phone: { type: DataTypes.STRING },
+        payment: {
+          type: DataTypes.ENUM(["MercadoPago", "Crédito", "PayPal"]),
+        },
+        paymentdata: {
+          type: DataTypes.JSON,
+        },
         products: {
           type: DataTypes.JSON,
         },
         status: {
           type: DataTypes.ENUM(["Sin pagar", "Pago", "Enviado", "Entregado"]),
-        },
-        payment: {
-          type: DataTypes.ENUM(["MercadoPago", "Crédito", "PayPal"]),
         },
       },
 

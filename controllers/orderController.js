@@ -12,10 +12,14 @@ async function show(req, res) {
 
 async function store(req, res) {
   const newOrder = await Order.create({
-    adress: req.body.adress,
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+    address: req.body.address,
+    phone: req.body.phone,
+    payment: req.body.payment,
+    paymentdata: req.body.paymentdata,
     products: req.body.products,
     status: req.body.status,
-    payment: req.body.payment,
   });
   return res.json(newOrder);
 }
