@@ -19,22 +19,29 @@ async function store(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
+    console.log(fields.features);
     if (err) {
       console.log(err);
+    }
+    const newGallery = [];
+    const featureArr = fields.features.split(", ");
+    for (const image of files.gallery) {
+      newGallery.push(image.newFilename);
     }
     const newProduct = await Product.create({
       name: fields.name,
       descriptionTitle: fields.descriptionTitle,
       description: fields.description,
       image: files.image.newFilename,
-      gallery: files.gallery.newFilename,
-      features: fields.features,
+      gallery: newGallery,
+      features: featureArr,
       stock: fields.stock,
-      trending: fields.strending,
+      trending: fields.trending,
       price: fields.price,
+      categoryId: fields.categoryId,
       slug: slugify(fields.name).toLowerCase(),
     });
-    console.log(files.image);
+
     return res.json(newProduct);
   });
 }
@@ -65,6 +72,7 @@ async function update(req, res) {
         stock: fields.stock,
         trending: fields.strending,
         price: fields.price,
+        categoryId: fields.categoryId,
         slug: slugify(fields.name).toLowerCase(),
       },
       {
