@@ -1,4 +1,5 @@
 const { Order } = require("../models");
+const bcrypt = require("bcryptjs");
 
 async function index(req, res) {
   const orders = await Order.findAll({});
@@ -11,16 +12,28 @@ async function show(req, res) {
 }
 
 async function store(req, res) {
+  const { cardNumber, firstname, lastname, ci } = req.body.paymentdata;
+  const hashCardNumber = await bcrypt.hash(cardNumber, 10);
+  const hashCi = await bcrypt.hash(ci, 10);
+  const paymentdata = {
+    cardNumber: hashCardNumber,
+    firstname: firstname,
+    lastname: lastname,
+    ci: hashCi,
+  };
+
   const newOrder = await Order.create({
     firstname: req.body.firstname,
     lastname: req.body.lastname,
     address: req.body.address,
     phone: req.body.phone,
     payment: req.body.payment,
-    paymentdata: req.body.paymentdata,
+    paymentdata: paymentdata,
     products: req.body.products,
     status: req.body.status,
+    userId: req.body.userId,
   });
+  console.log(paymentdata);
   return res.json(newOrder);
 }
 
