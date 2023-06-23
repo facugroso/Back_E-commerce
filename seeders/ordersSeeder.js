@@ -5,6 +5,8 @@ module.exports = async () => {
   const orders = [];
   orders.push(
     {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
       address: faker.address.streetAddress({ useFullAddress: true }),
       products: [
         {
@@ -13,7 +15,7 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
-      status: "Sin pagar",
+      status: "Pending",
       payment: "MercadoPago",
       userId: Math.floor(Math.random() * 8) + 1,
     },
@@ -31,7 +33,7 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
-      status: "Enviado",
+      status: "Sent",
       payment: "PayPal",
       userId: Math.floor(Math.random() * 8) + 1,
     },
@@ -49,7 +51,7 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
-      status: "Enviado",
+      status: "Sent",
       payment: "PayPal",
       userId: Math.floor(Math.random() * 8) + 1,
     },
@@ -62,7 +64,7 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
-      status: "Entregado",
+      status: "Delivered",
       payment: "Crédito",
       userId: Math.floor(Math.random() * 8) + 1,
     },
@@ -75,7 +77,7 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
-      status: "Pago",
+      status: "Paid",
       payment: "MercadoPago",
       userId: Math.floor(Math.random() * 8) + 1,
     },
@@ -93,7 +95,7 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
-      status: "Enviado",
+      status: "Sent",
       payment: "Crédito",
       userId: Math.floor(Math.random() * 8) + 1,
     }
