@@ -15,11 +15,14 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
+      phone: faker.phone.phoneNumber(),
       status: "Pending",
       payment: "MercadoPago",
       userId: Math.floor(Math.random() * 8) + 1,
     },
     {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
       address: faker.address.streetAddress({ useFullAddress: true }),
       products: [
         {
@@ -33,11 +36,14 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
+      phone: faker.phone.phoneNumber(),
       status: "Sent",
       payment: "PayPal",
       userId: Math.floor(Math.random() * 8) + 1,
     },
     {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
       address: faker.address.streetAddress({ useFullAddress: true }),
       products: [
         {
@@ -51,11 +57,14 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
+      phone: faker.phone.phoneNumber(),
       status: "Sent",
       payment: "PayPal",
       userId: Math.floor(Math.random() * 8) + 1,
     },
     {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
       address: faker.address.streetAddress({ useFullAddress: true }),
       products: [
         {
@@ -64,11 +73,14 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
+      phone: faker.phone.phoneNumber(),
       status: "Delivered",
       payment: "Crédito",
       userId: Math.floor(Math.random() * 8) + 1,
     },
     {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
       address: faker.address.streetAddress({ useFullAddress: true }),
       products: [
         {
@@ -77,11 +89,14 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
+      phone: faker.phone.phoneNumber(),
       status: "Paid",
       payment: "MercadoPago",
       userId: Math.floor(Math.random() * 8) + 1,
     },
     {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
       address: faker.address.streetAddress({ useFullAddress: true }),
       products: [
         {
@@ -95,6 +110,7 @@ module.exports = async () => {
           quantity: 1,
         },
       ],
+      phone: faker.phone.phoneNumber(),
       status: "Sent",
       payment: "Crédito",
       userId: Math.floor(Math.random() * 8) + 1,

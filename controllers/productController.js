@@ -90,7 +90,7 @@ async function update(req, res) {
 
 async function destroy(req, res) {
   await Product.destroy({
-    where: { id: req.params.id },
+    where: { slug: req.params.slug },
   });
   return res.json("Su producto ha sido eliminado con éxito");
 }
