@@ -21,7 +21,7 @@ router.get(
 );
 router.post(
   "/orders",
-  // checkJwt({ secret: process.env.SECRET_USER, algorithms: ["HS256"] }),
+  checkJwt({ secret: process.env.SECRET_USER, algorithms: ["HS256"] }),
   orderController.store
 );
 
