@@ -8,7 +8,7 @@ router.use(
 );
 
 router.post("/", productController.store);
-router.delete("/:id", productController.destroy);
+router.delete("/:slug", productController.destroy);
 router.patch("/:slug", productController.update);
 
 module.exports = router;
