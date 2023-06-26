@@ -1,4 +1,4 @@
-const { Order } = require("../models");
+const { Order, User } = require("../models");
 const bcrypt = require("bcryptjs");
 
 async function index(req, res) {
@@ -7,7 +7,10 @@ async function index(req, res) {
 }
 
 async function show(req, res) {
-  const order = await Order.findOne({ where: { id: req.params.id } });
+  const order = await Order.findOne({
+    where: { id: req.params.id },
+    include: { model: User, as: "user" },
+  });
   res.json(order);
 }
 

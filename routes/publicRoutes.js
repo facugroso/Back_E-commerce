@@ -14,11 +14,7 @@ router.post("/users", userController.store);
 router.get("/categories", categoryController.index);
 router.get("/categories/:id", categoryController.show);
 
-router.get(
-  "/orders/:id",
-  checkJwt({ secret: process.env.SECRET_USER, algorithms: ["HS256"] }),
-  orderController.show
-);
+router.get("/orders/:id", orderController.show);
 router.post(
   "/orders",
   checkJwt({ secret: process.env.SECRET_USER, algorithms: ["HS256"] }),
