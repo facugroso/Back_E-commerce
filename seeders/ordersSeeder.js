@@ -75,7 +75,7 @@ module.exports = async () => {
       ],
       phone: faker.phone.phoneNumber(),
       status: "Delivered",
-      payment: "Crédito",
+      payment: "Credit Card",
       userId: Math.floor(Math.random() * 8) + 1,
     },
     {
@@ -112,7 +112,7 @@ module.exports = async () => {
       ],
       phone: faker.phone.phoneNumber(),
       status: "Sent",
-      payment: "Crédito",
+      payment: "Credit Card",
       userId: Math.floor(Math.random() * 8) + 1,
     }
   );

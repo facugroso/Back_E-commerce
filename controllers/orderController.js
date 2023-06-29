@@ -15,14 +15,12 @@ async function show(req, res) {
 }
 
 async function store(req, res) {
-  const { cardNumber, firstname, lastname, ci } = req.body.paymentdata;
+  const { cardNumber, firstname, lastname } = req.body.paymentdata;
   const hashCardNumber = await bcrypt.hash(cardNumber, 10);
-  const hashCi = await bcrypt.hash(ci, 10);
   const paymentdata = {
     cardNumber: hashCardNumber,
     firstname: firstname,
     lastname: lastname,
-    ci: hashCi,
   };
 
   const newOrder = await Order.create({

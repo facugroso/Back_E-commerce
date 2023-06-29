@@ -16,7 +16,7 @@ class Order extends Model {
         },
         phone: { type: DataTypes.STRING },
         payment: {
-          type: DataTypes.ENUM(["MercadoPago", "Crédito", "PayPal"]),
+          type: DataTypes.ENUM(["MercadoPago", "Credit Card", "PayPal"]),
         },
         paymentdata: {
           type: DataTypes.JSON,
