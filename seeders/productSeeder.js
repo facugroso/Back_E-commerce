@@ -6,13 +6,14 @@ module.exports = async () => {
   products.push(
     {
       name: "HyperX Cloud III - Gaming Headset",
-      image:
-        "https://i.postimg.cc/V62MhMRJ/hyperx-cloud-iii-red-6649-main-1-588d9fec-b439-4046-bcae-4d38df96053e-900x.png",
+      image: "hyperx-cloud-iii-red.png",
 
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_iii_red_66x0049_angle_2_720x.jpg?v=1686845842",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_iii_red_66x0049_angle_3_720x.jpg?v=1686845842",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_iii_red_66x0049_angle_4_720x.jpg?v=1686845842",
+        "hyperx-cloud-iii-red.png",
+        "hyperx_cloud_iii_red_gallery00.webp",
+        "hyperx_cloud_iii_red_gallery01.webp",
+        "hyperx_cloud_iii_red_gallery02.webp",
+        "hyperx_cloud_iii_red_gallery03.webp",
       ],
       descriptionTitle: "A Legend Reborn.",
       description:
@@ -31,13 +32,12 @@ module.exports = async () => {
     },
     {
       name: "HyperX Cloud Alpha - Naruto Edition - Gaming Headset",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_alpha_naruto_orange_4_detachable_720x.jpg?v=1686845623",
+      image: "hyperx_cloud_alpha_naruto.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_alpha_naruto_orange_2_side_720x.jpg?v=1686845623",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_alpha_naruto_orange_3_front_720x.jpg?v=1686845623",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_alpha_naruto_orange_4_detachable_720x.jpg?v=1686845623",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_alpha_naruto_orange_6_accessories_720x.jpg?v=1686845623",
+        "hyperx_cloud_alpha_naruto_gallery00.webp",
+        "hyperx_cloud_alpha_naruto_gallery01.webp",
+        "hyperx_cloud_alpha_naruto_gallery02.webp",
+        "hyperx_cloud_alpha_naruto_gallery03.webp",
       ],
       descriptionTitle: "Believe in your gear.",
       description:
@@ -56,12 +56,13 @@ module.exports = async () => {
     },
     {
       name: "HyperX CloudX Stinger Core - Gaming Headset - Xbox",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloudx_stinger_core_2_main_extended_720x.jpg?v=1678907964",
+      image: "hyperx_cloudx_stinger_core_2_main_extended_720x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloudx_stinger_2_core_black_xbox_6_mute_720x.jpg?v=1686845749",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloudx_stinger_2_core_black_xbox_3_front_720x.jpg?v=1686845749",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloudx_stinger_core_2_main_extended_720x.jpg?v=1678907964",
+        "hyperx_cloudx_stinger_2_gallery00.webp",
+        "hyperx_cloudx_stinger_2_gallery01.webp",
+        "hyperx_cloudx_stinger_2_gallery02.webp",
+        "hyperx_cloudx_stinger_2_gallery03.webp",
+        "hyperx_cloudx_stinger_2_gallery04.webp",
       ],
       descriptionTitle: "Lightweight, essential for Xbox.",
       description:
@@ -80,12 +81,13 @@ module.exports = async () => {
     },
     {
       name: "HyperX Alloy Origins Core PBT - Mechanical Gaming Keyboard",
-      image:
-        "https://i.postimg.cc/zBCh82Sq/hyperx-alloy-origins-core-pbt-english-us-aqua-1-main-900x.png",
+      image: "hyperx-alloy-origins-core-pbt-english-us-aqua-1-main-900x.png",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_core_pbt_english_us_aqua_2_angled_left_720x.jpg?v=1686845772",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_core_pbt_english_us_aqua_3_angled_right_720x.jpg?v=1686845772",
-        "https://i.postimg.cc/zBCh82Sq/hyperx-alloy-origins-core-pbt-english-us-aqua-1-main-900x.png",
+        "hyperx_alloy_origins_core_gallery00.webp",
+        "hyperx_alloy_origins_core_gallery01.webp",
+        "hyperx_alloy_origins_core_gallery02.webp",
+        "hyperx_alloy_origins_core_gallery03.webp",
+        "hyperx_alloy_origins_core_gallery04.webp",
       ],
       descriptionTitle: "Durable PBT Keycaps on a Super-Compact Design.",
       description:
@@ -106,12 +108,12 @@ module.exports = async () => {
     },
     {
       name: "HyperX Alloy Origins - Naruto Edition - Mechanical Gaming Keyboard",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_naruto_orange_1_main_720x.jpg?v=1678908037",
+      image: "hyperx_alloy_origins_naruto_orange_1_main_720x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_naruto_orange_2_angled_left_720x.jpg?v=1686846222",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_naruto_orange_3_angled_right_720x.jpg?v=1686846222",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_naruto_orange_1_main_720x.jpg?v=1678908037",
+        "hyperx_alloy_origins_naruto_gallery00.webp",
+        "hyperx_alloy_origins_naruto_gallery01.webp",
+        "hyperx_alloy_origins_naruto_gallery02.webp",
+        "hyperx_alloy_origins_naruto_gallery03.webp",
       ],
       descriptionTitle: "Believe in your gear.",
       description:
@@ -132,12 +134,13 @@ module.exports = async () => {
     },
     {
       name: "HyperX Alloy Origins 60 - Mechanical Gaming Keyboard",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_60_pink_english_us_5_special_720x.jpg?v=1686846158",
+      image: "hyperx_alloy_origins_60_pink_english_us_5_special_900x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_60_pink_english_us_2_angled_left_720x.jpg?v=1686846158",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_60_pink_english_us_3_angled_right_720x.jpg?v=1686846158",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_alloy_origins_60_pink_english_us_5_special_720x.jpg?v=1686846158",
+        "hyperx_alloy_origins_gallery00.webp",
+        "hyperx_alloy_origins_gallery01.webp",
+        "hyperx_alloy_origins_gallery02.webp",
+        "hyperx_alloy_origins_gallery03.webp",
+        "hyperx_alloy_origins_gallery04.webp",
       ],
       descriptionTitle: "Make room for more plays.",
       description:
@@ -181,12 +184,14 @@ module.exports = async () => {
     },
     {
       name: "HyperX QuadCast - USB Microphone",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_quadcast_02_side_720x.jpg?v=1678907138",
+      image: "hyperx_quadcast_02_side_900x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_quadcast_s_2_side_720x.jpg?v=1686845750",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_quadcast_s_4_angled_720x.jpg?v=1686845750",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_quadcast_02_side_720x.jpg?v=1678907138",
+        "hyperx_quadcast_gallery00.webp",
+        "hyperx_quadcast_gallery01.webp",
+        "hyperx_quadcast_gallery02.webp",
+        "hyperx_quadcast_gallery03.webp",
+        "hyperx_quadcast_gallery04.webp",
+        "hyperx_quadcast_gallery05.webp",
       ],
       descriptionTitle:
         "Stunning RGB microphone for streamers and content creators.",
@@ -206,12 +211,14 @@ module.exports = async () => {
     },
     {
       name: "HyperX DuoCast - USB Microphone - RGB Lighting",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_duocast_2_side_720x.jpg?v=1678908024",
+      image: "hyperx_duocast_2_side_900x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_duocast_2_side_720x.jpg?v=1686846041",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_duocast_4_tilt_720x.jpg?v=1686846041",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_duocast_2_side_720x.jpg?v=1678908024",
+        "hyperx_duocast_2_gallery00.webp",
+        "hyperx_duocast_2_gallery01.webp",
+        "hyperx_duocast_2_gallery02.webp",
+        "hyperx_duocast_2_gallery03.webp",
+        "hyperx_duocast_2_gallery04.webp",
+        "hyperx_duocast_2_gallery05.webp",
       ],
       descriptionTitle: "USB microphone with standout style and sound.",
       description:
@@ -231,11 +238,17 @@ module.exports = async () => {
     {
       name: "HyperX Armada 25 FHD Gaming Monitor",
       image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_720x.jpg?v=1678907555",
+        "hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_900x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_4_angled_left_no_arm_720x.jpg?v=1686845668",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_7_top_down_720x.jpg?v=1686845668",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_720x.jpg?v=1678907555",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery09.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery01.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery02.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery03.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery04.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery05.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery06.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery07.webp",
+        "hyperx_armada_25_fhd_gaming_monitor_gallery08.webp",
       ],
       descriptionTitle: "Your Space, Your Way.",
       description:
@@ -255,11 +268,18 @@ module.exports = async () => {
     {
       name: "HyperX Armada 27 QHD Gaming Monitor",
       image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_720x.jpg?v=1678907555",
+        "hyperx_armada_27_qhd_gaming_monitor_g_sync_2_main_no_arm_900x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_4_angled_left_no_arm_720x.jpg?v=1686845668",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_7_top_down_720x.jpg?v=1686845668",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_720x.jpg?v=1678907555",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery00.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery01.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery02.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery03.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery04.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery05.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery06.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery07.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery08.webp",
+        "hyperx_armada_27_qhd_gaming_monitor_gallery09.webp",
       ],
       descriptionTitle: "Your Space, Your Way.",
       description:
@@ -278,12 +298,15 @@ module.exports = async () => {
     },
     {
       name: "HyperX Pulsefire Haste 2 - Wireless Gaming Mouse",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_2_wireless_black_main_0_720x.jpg?v=1686846098",
+      image: "hyperx_pulsefire_haste_2_wireless_black_main_0_720x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_2_wireless_black_angle_2_720x.jpg?v=1686846098",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_2_wireless_black_angle_3_720x.jpg?v=1686846098",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_2_wireless_black_main_0_720x.jpg?v=1686846098",
+        "hyperx_pulsefire_haste_2_wireless_gallery00.webp",
+        "hyperx_pulsefire_haste_2_wireless_gallery01.webp",
+        "hyperx_pulsefire_haste_2_wireless_gallery02.webp",
+        "hyperx_pulsefire_haste_2_wireless_gallery03.webp",
+        "hyperx_pulsefire_haste_2_wireless_gallery04.webp",
+        "hyperx_pulsefire_haste_2_wireless_gallery05.webp",
+        "hyperx_pulsefire_haste_2_wireless_gallery06.webp",
       ],
       descriptionTitle: "Wireless gaming at the speed of ultra-light.",
       description:
@@ -302,12 +325,16 @@ module.exports = async () => {
     },
     {
       name: "HyperX Pulsefire Haste - Naruto Edition - Gaming Mouse",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_naruto_orange_1_main_720x.jpg?v=1686845769",
+      image: "hyperx_pulsefire_haste_naruto_orange_1_main_900x.webp",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_naruto_orange_2_back_angled_720x.jpg?v=1686845769",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_naruto_orange_3_front_angled_720x.jpg?v=1686845769",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_haste_naruto_orange_1_main_720x.jpg?v=1686845769",
+        "hyperx_pulsefire_haste_naruto_orange_gallery00.webp",
+        "hyperx_pulsefire_haste_naruto_orange_gallery01.webp",
+        "hyperx_pulsefire_haste_naruto_orange_gallery02.webp",
+        "hyperx_pulsefire_haste_naruto_orange_gallery03.webp",
+        "hyperx_pulsefire_haste_naruto_orange_gallery04.webp",
+        "hyperx_pulsefire_haste_naruto_orange_gallery05.webp",
+        "hyperx_pulsefire_haste_naruto_orange_gallery06.webp",
+        "hyperx_pulsefire_haste_naruto_orange_gallery07.webp",
       ],
       descriptionTitle: "Believe in your gear.",
       description:
@@ -326,12 +353,15 @@ module.exports = async () => {
     },
     {
       name: "HyperX Pulsefire Dart - Wireless Gaming Mouse",
-      image:
-        "https://i.postimg.cc/y6PMFyXD/hyperx-pulsefire-dart-01-top-down-720x.png",
+      image: "hyperx-pulsefire-dart-01-top-down-720x.png",
       gallery: [
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_dart_02_angled_back_720x.jpg?v=1686845971",
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_pulsefire_dart_03_angled_front_720x.jpg?v=1686845971",
-        "https://i.postimg.cc/y6PMFyXD/hyperx-pulsefire-dart-01-top-down-720x.png",
+        "hyperx_pulsefire_dart_01_gallery00.webp",
+        "hyperx_pulsefire_dart_01_gallery01.webp",
+        "hyperx_pulsefire_dart_01_gallery02.webp",
+        "hyperx_pulsefire_dart_01_gallery03.webp",
+        "hyperx_pulsefire_dart_01_gallery04.webp",
+        "hyperx_pulsefire_dart_01_gallery05.webp",
+        "hyperx_pulsefire_dart_01_gallery06.webp",
       ],
       descriptionTitle: "Ultimate precision with complete wireless freedom.",
       description:

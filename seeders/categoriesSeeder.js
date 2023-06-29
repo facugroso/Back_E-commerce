@@ -6,32 +6,27 @@ module.exports = async () => {
   category.push(
     {
       name: "GAMING MONITORS",
-      image:
-        "https://row.hyperx.com/cdn/shop/files/HX-shop_category-tiles_monitors_360x.jpg?v=1674118027",
+      image: "gaming_monitors_category.webp",
       slug: slugify("GAMING MONITORS").toLowerCase(),
     },
     {
       name: "GAMING HEADSETS",
-      image:
-        "https://row.hyperx.com/cdn/shop/files/HX-shop_category-tiles_headsets_360x.jpg?v=1674118026",
+      image: "gaming_headsets_category.webp",
       slug: slugify("GAMING HEADSETS").toLowerCase(),
     },
     {
       name: "GAMING KEYBOARDS",
-      image:
-        "https://row.hyperx.com/cdn/shop/files/HX-shop_category-tiles_keyboards_360x.jpg?v=1674118027",
+      image: "gaming_keyboard_category.webp",
       slug: slugify("GAMING KEYBOARDS").toLowerCase(),
     },
     {
       name: "GAMING MICE",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/HX-shop_category-tiles_mice_360x.jpg?v=1672844604",
+      image: "hgaming_mice_category.webp",
       slug: slugify("GAMING MICE").toLowerCase(),
     },
     {
       name: "MICROPHONE",
-      image:
-        "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/HX-shop_category-tiles_microphones_360x.jpg?v=1672844524",
+      image: "gaming_microphone_category.webp",
       slug: slugify("MICROPHONE").toLowerCase(),
     }
   );
