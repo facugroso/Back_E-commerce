@@ -2,7 +2,7 @@ const { Admin } = require("../models");
 const bcrypt = require("bcryptjs");
 
 module.exports = async () => {
-  let encryptedPassword = await bcrypt.hash("carlos", 8);
+  let encryptedPassword = await bcrypt.hash("1234", 8);
 
   const admin = Admin.create({
     firstname: "Admin",
