@@ -1,4 +1,4 @@
-const { Category } = require("../models/");
+const { Category } = require("../models");
 const { Product } = require("../models");
 const slugify = require("slugify");
 const formidable = require("formidable");
