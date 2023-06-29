@@ -21,7 +21,7 @@ module.exports = async () => {
     },
     {
       name: "GAMING MICE",
-      image: "hgaming_mice_category.webp",
+      image: "gaming_mice_category.webp",
       slug: slugify("GAMING MICE").toLowerCase(),
     },
     {
