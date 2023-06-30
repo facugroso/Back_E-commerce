@@ -34,7 +34,6 @@ async function store(req, res) {
     status: req.body.status,
     userId: req.body.userId,
   });
-  console.log(paymentdata);
   return res.json(newOrder);
 }
 
