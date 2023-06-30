@@ -53,7 +53,7 @@ async function store(req, res) {
       name: fields.name,
       descriptionTitle: fields.descriptionTitle,
       description: fields.description,
-      image: files.image.newFilename,
+      image: data.Key,
       //gallery: newGallery,
       features: featureArr,
       stock: fields.stock,
