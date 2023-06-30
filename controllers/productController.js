@@ -1,6 +1,14 @@
 const slugify = require("slugify");
 const { Product } = require("../models");
+const fs = require("fs");
+const path = require("path");
 const formidable = require("formidable");
+const { createClient } = require("@supabase/supabase-js");
+
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_KEY
+);
 
 async function index(req, res) {
   const products = await Product.findAll({});
@@ -14,7 +22,6 @@ async function show(req, res) {
 async function store(req, res) {
   const form = formidable({
     multiples: true,
-    uploadDir: __dirname + "/../public/img",
     keepExtensions: true,
   });
 
@@ -22,23 +29,38 @@ async function store(req, res) {
     if (err) {
       console.log(err);
     }
-    const newGallery = [];
+
+    const slug = slugify(fields.name).toLowerCase();
+    const ext = path.extname(files.image.filepath);
+    const newFileName = `${slug}${ext}`;
+
+    const { data, error } = await supabase.storage
+      .from("img")
+      .upload(newFileName, fs.createReadStream(files.image.filepath), {
+        cacheControl: "3600",
+        upsert: false,
+        contentType: files.image.mimetype,
+        duplex: half,
+      });
+
+    //const newGallery = [];
     const featureArr = fields.features.split(", ");
-    for (const image of files.gallery) {
-      newGallery.push(image.newFilename);
-    }
+
+    // for (const image of files.gallery) {
+    //   newGallery.push(image.newFilename);
+    // }
     const newProduct = await Product.create({
       name: fields.name,
       descriptionTitle: fields.descriptionTitle,
       description: fields.description,
       image: files.image.newFilename,
-      gallery: newGallery,
+      //gallery: newGallery,
       features: featureArr,
       stock: fields.stock,
       trending: fields.trending,
       price: fields.price,
       categoryId: fields.categoryId,
-      slug: slugify(fields.name).toLowerCase(),
+      slug: slug,
     });
 
     return res.json(newProduct);
