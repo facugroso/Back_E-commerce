@@ -29,7 +29,7 @@ async function store(req, res) {
     if (err) {
       console.log(err);
     }
-
+    console.log("hey");
     const slug = slugify(fields.name).toLowerCase();
     const ext = path.extname(files.image.filepath);
     const newFileName = `${slug}${ext}`;
