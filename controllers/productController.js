@@ -46,7 +46,6 @@ async function store(req, res) {
 
     //const newGallery = [];
     const featureArr = fields.features.split(", ");
-    console.log(data);
 
     // for (const image of files.gallery) {
     //   newGallery.push(image.newFilename);
@@ -65,6 +64,7 @@ async function store(req, res) {
       slug: slug,
     });
 
+    console.log(data);
     return res.json(newProduct);
   });
 }
