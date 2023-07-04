@@ -35,6 +35,7 @@ async function store(req, res) {
     const newFileName = `${slug}${ext}`;
 
     const { data, error } = await supabase.storage
+
       .from("img")
       .upload(newFileName, fs.createReadStream(files.image.filepath), {
         cacheControl: "3600",
@@ -45,6 +46,7 @@ async function store(req, res) {
 
     //const newGallery = [];
     const featureArr = fields.features.split(", ");
+    console.log(data);
 
     // for (const image of files.gallery) {
     //   newGallery.push(image.newFilename);
@@ -53,7 +55,7 @@ async function store(req, res) {
       name: fields.name,
       descriptionTitle: fields.descriptionTitle,
       description: fields.description,
-      image: data.Key,
+      image: data,
       //gallery: newGallery,
       features: featureArr,
       stock: fields.stock,
