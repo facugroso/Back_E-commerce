@@ -40,7 +40,6 @@ async function store(req, res) {
         cacheControl: "3600",
         upsert: false,
         contentType: files.image.mimetype,
-        duplex: half,
       });
 
     //const newGallery = [];
