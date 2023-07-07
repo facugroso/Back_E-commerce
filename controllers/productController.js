@@ -75,7 +75,6 @@ async function store(req, res) {
       slug: slug,
     });
 
-    console.log(data);
     return res.json(newProduct);
   });
 }
