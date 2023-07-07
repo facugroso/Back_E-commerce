@@ -29,7 +29,6 @@ async function store(req, res) {
     if (err) {
       console.log(err);
     }
-    console.log("hey");
     const slug = slugify(fields.name).toLowerCase();
     const ext = path.extname(files.image.filepath);
     const timestamp = Date.now();
@@ -116,8 +115,6 @@ async function update(req, res) {
       name: fields.name,
       descriptionTitle: fields.descriptionTitle,
       description: fields.description,
-      image: newFileName,
-      gallery: newGallery,
       features: featureArr,
       stock: fields.stock,
       trending: fields.trending,
@@ -125,7 +122,23 @@ async function update(req, res) {
       categoryId: fields.categoryId,
       slug: slug,
     };
-    if (files.image.size) updatedProduct.image = files.image.newFilename;
+    if (files.image.size) {
+      const slug = slugify(fields.name).toLowerCase();
+      const ext = path.extname(files.image.filepath);
+      const timestamp = Date.now();
+      const newFileName = `${slug}${timestamp}${ext}`;
+      const { data, error } = await supabase.storage
+
+        .from("img")
+        .upload(newFileName, fs.createReadStream(files.image.filepath), {
+          cacheControl: "3600",
+          upsert: false,
+          contentType: files.image.mimetype,
+          duplex: "half",
+        });
+
+      updatedProduct.image = newFileName;
+    }
     if (!files.gallery.newFilename) {
       for (const galleryImage of files.gallery) {
         const galleryExt = path.extname(galleryImage.filepath);
