@@ -32,8 +32,8 @@ async function store(req, res) {
     console.log("hey");
     const slug = slugify(fields.name).toLowerCase();
     const ext = path.extname(files.image.filepath);
-    const newFileName = `${slug}${ext}`;
-
+    const timestamp = Date.now();
+    const newFileName = `${slug}${timestamp}${ext}`;
     const { data, error } = await supabase.storage
 
       .from("img")
@@ -44,18 +44,31 @@ async function store(req, res) {
         duplex: "half",
       });
 
-    //const newGallery = [];
+    const newGallery = [];
     const featureArr = fields.features.split(", ");
+    console.log(files.gallery);
 
-    // for (const image of files.gallery) {
-    //   newGallery.push(image.newFilename);
-    // }
+    for (const galleryImage of files.gallery) {
+      const galleryExt = path.extname(galleryImage.filepath);
+      const galleryFileName = `${galleryImage.originalFilename}${timestamp}${galleryExt}`;
+
+      const { data: galleryData, error: galleryError } = await supabase.storage
+        .from("img")
+        .upload(galleryFileName, fs.createReadStream(galleryImage.filepath), {
+          cacheControl: "3600",
+          upsert: false,
+          contentType: galleryImage.mimetype,
+          duplex: "half",
+        });
+
+      newGallery.push(galleryFileName);
+    }
     const newProduct = await Product.create({
       name: fields.name,
       descriptionTitle: fields.descriptionTitle,
       description: fields.description,
       image: newFileName,
-      //gallery: newGallery,
+      gallery: newGallery,
       features: featureArr,
       stock: fields.stock,
       trending: fields.trending,
